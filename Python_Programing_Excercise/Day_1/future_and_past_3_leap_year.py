@@ -15,7 +15,7 @@ i=0
 year=leap
 print "past 3 leap year is :- ",
 while leap>=i:
-	if (leap%4==0 or leap%400==0) and leap%100!=0:
+	if (leap%4==0 and leap%100!=0) or leap%400==0:
 		store=store+1
 		print leap,
 		if store==3:
@@ -24,7 +24,7 @@ while leap>=i:
 print ''
 print "Furure 3 Leap Year is :- ",
 while year>=i:
-	if (year%4==0 or year%400==0) and year%100!=0:
+	if (leap%4==0 and leap%100!=0) or leap%400==0:
 		plus=plus+1
 		print year,
 		if plus==3:
