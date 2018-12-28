@@ -10,7 +10,7 @@ Eg:
 
 #Program
 num=int(input('Enter the number :'))
-if ((num%400==0 or num%4==0) and num%100!=0):
+if ((num%4==0 and num%100!=0) or num%400==0):
 	print ("%d is a Leap Year"%num)
 else:
 	print ("%d is not a Leap Year"%num)
